@@ -5,7 +5,7 @@ import { FiExternalLink } from 'react-icons/fi';
 type NavigationLink = { title: string; displayTitle?: ReactNode } & LinkProps & React.AnchorHTMLAttributes<HTMLAnchorElement>
 
 const navigationLinks: NavigationLink[] = [
-  // { href: '/blog', title: 'Blog' },
+  { href: '/blog', title: 'Blog' },
   { href: '/about', title: 'About' },
   // { href: '/projects', title: 'Projects' },
 ];
