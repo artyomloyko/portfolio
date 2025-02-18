@@ -4,6 +4,7 @@ import tailwindTypography from '@tailwindcss/typography';
 import tailwindScrollbar from 'tailwind-scrollbar';
 import colors from 'tailwindcss/colors';
 import defaultTheme from 'tailwindcss/defaultTheme';
+import { Config } from 'tailwindcss';
 import { baseTheme } from './app/themes/base';
 import { themeColors } from './app/themes/colors';
 import { createTypographyTheme } from './app/themes/typography';
@@ -42,6 +43,6 @@ const config = {
     tailwindTypography(),
     tailwindScrollbar({ nocompatible: true }),
   ],
-};
+} satisfies Config;
 
 export default config

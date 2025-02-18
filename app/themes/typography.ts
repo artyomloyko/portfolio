@@ -1,4 +1,6 @@
-export const createTypographyTheme = (theme) => ({
+type ThemeFunction = (path: string) => string;
+
+export const createTypographyTheme = (theme: ThemeFunction) => ({
   DEFAULT: {
     css: {
       color: theme('colors.gray.700'),
