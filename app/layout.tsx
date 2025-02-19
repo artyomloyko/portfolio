@@ -42,7 +42,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           themes={['dark', 'light']}
         >
           <span
-            className="absolute bg-primary-500/15 rounded-full -z-10"
+            className="absolute bg-primary-500/10 rounded-full -z-10"
             style={{ width: '100vw', height: '100vw', top: '-30vw', right: '-50vw' }}
           />
           <Header />
