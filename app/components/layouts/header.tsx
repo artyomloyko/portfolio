@@ -31,13 +31,14 @@ export default function Header() {
           </div>
           <div className="flex items-center space-x-3 text-base leading-5">
             <div className="hidden space-x-5 sm:flex mr-2">
-              {navigationLinks.map(({ title, displayTitle, href }) => {
+              {navigationLinks.map(({ title, displayTitle, href, ...linkOptions }) => {
                 const active = pathName?.includes(href);
                 return (
                   <Link
                     prefetch
                     key={title}
                     href={href}
+                    {...linkOptions}
                     className={classNames('horizontal-underline text-base', {
                       'horizontal-underline-active': active,
                     })}
