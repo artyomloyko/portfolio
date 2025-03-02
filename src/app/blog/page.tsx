@@ -1,0 +1,24 @@
+import MainLayout from '@/components/layouts/main-layout';
+import { BlogPosts } from '@/components/posts/posts';
+import { getBlogPosts } from '@/components/posts/utils';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Blog',
+  description: 'Read my blog.',
+};
+
+export default function Page() {
+  const posts = getBlogPosts();
+
+  return (
+    <MainLayout>
+      <section>
+        <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
+          Blog
+        </h1>
+        <BlogPosts posts={posts} />
+      </section>
+    </MainLayout>
+  );
+}

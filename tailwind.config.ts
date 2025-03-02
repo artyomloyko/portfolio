@@ -5,13 +5,18 @@ import tailwindScrollbar from 'tailwind-scrollbar';
 import colors from 'tailwindcss/colors';
 import defaultTheme from 'tailwindcss/defaultTheme';
 import { Config } from 'tailwindcss';
-import { baseTheme } from './app/themes/base';
-import { themeColors } from './app/themes/colors';
-import { createTypographyTheme } from './app/themes/typography';
+import { baseTheme } from './src/constants/themes/base';
+import { themeColors } from './src/constants/themes/colors';
+import { createTypographyTheme } from './src/constants/themes/typography';
 
 const config = {
   mode: 'jit',
-  content: ['./app/**/*.tsx', './components/**/*.tsx', './layouts/**/*.tsx', './lib/**/*.ts'],
+  content: [
+    './src/app/**/*.tsx',
+    './src/components/**/*.tsx',
+    './src/layouts/**/*.tsx',
+    './src/lib/**/*.ts',
+  ],
   darkMode: 'class',
   theme: {
     extend: {
@@ -45,4 +50,4 @@ const config = {
   ],
 } satisfies Config;
 
-export default config
+export default config;
