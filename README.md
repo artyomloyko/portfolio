@@ -56,13 +56,13 @@ My personal website showcasing my projects, blog posts, and professional experie
 1. Clone this repo
 
 ```bash
-git clone git@github.com:artyomloyko/portfolio.git
+git clone git@github.com:artyomloyko/blog.git
 ```
 
 2. Change directory
 
 ```bash
-cd portfolio
+cd blog
 ```
 
 3. Install dependencies
